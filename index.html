@@ -9,19 +9,19 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <div class="center-box">
         <div class="header-logo">
-          <span class="logo">Device</span>
+          <a href="#" class="logo">Device</a>
         </div>
         <div class="form-menu">
           <form class="user-menu" action="" method="get">
             <button>Поиск</button>
             <input type="search" placeholder="Поиск по сайту">
           </form>
-          <a class="profile" href="" >Войти</a>
-          <a class="compare" href="" >Сравнить</a>
-          <a class="basket" href="" >Корзина</a>
+          <a class="profile" href="#" >Войти</a>
+          <a class="compare" href="#" >Сравнить</a>
+          <a class="basket" href="#" >Корзина</a>
         </div>
         <nav class="main-menu">
           <ul class="menu-list">
@@ -116,59 +116,81 @@
             <span><a href="">Квадрокоптеры</a></span></div>
         </section>
         <section class="services">
-          
+          <div class="services-menu">
+            <ul>
+              <li class="btn services-menu-item">Доставка</li>
+              <li class="btn services-menu-item">Гарантия</li>
+              <li class="btn services-menu-item">Кредит</li>
+            </ul>
+          </div>
+          <div class="services-cart services-cart--delivery">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="services-cart services-cart--warranty">
+            <h2>Гарантия</h2>
+            <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </div>
+          <div class="services-cart services-cart--credit">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
         </section>
         <section class="partners">
-          <a class="partners-logo" href="#" ><img src="img/logo-partner1.png" alt="" width="260" height="100"></a>
-          <a class="partners-logo" href="#" ><img src="img/logo-partner2.png" alt="" width="260" height="100"></a>
+          <a class="partners-logo" href="#"><img src="img/logo-partner1.png" alt="" width="260" height="100"></a>
+          <a class="partners-logo" href="#"><img src="img/logo-partner2.png" alt="" width="260" height="100"></a>
           <a class="partners-logo" href="#" ><img src="img/logo-partner3.png" alt="" width="260" height="100"></a>
           <a class="partners-logo" href="#" ><img src="img/logo-partner4.png" alt="" width="260" height="100"></a>
         </section>
         <section class="about-contacts">
           <div class="about">
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+            <h2>О нас</h2>
+            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul class="transcompany">
+              <li><a href="#">Деловые линии</a></li>
+              <li><a href="#">Автотрейдинг</a></li>
+              <li><a href="#">ЖелДорЭкспедиция</a></li>
             </ul>
-            <a href="#" class="about-us"></a>
+            <a href="#" class="btn about-us">Подробнее о нас</a>
           </div>
           <div class="contacts">
-            <h2></h2>
-            <p></p>
-            <div class="card"></div>
-            <a href="" class="mail-us"></a>
+            <h2>Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <div class="map">
+              <a href="#"><img class="map-preview" src="/img/map.jpg" width="560" height="222" alt=""></a>
+            </div>
+            <a href="#" class="btn mail-us">Напишите нам</a>
           </div>
         </section>
       </div>
     </main>
-    <footer class="center-box">
-      <div class="footer-logo">
-        <span class="logo">Device</span>
+    <footer>
+      <div class="center-box">
+        <div class="footer-logo">
+          <span class="logo">Device</span>
+        </div>
+        <div class="user-menu">
+          <a class="profile" href="#">Войти</a>
+          <a class="compare" href="#">Сравнить</a>
+          <a class="basket" href="#">Корзина</a>
+        </div>
+        <span class="adress">г.Москва, ул.Строителей, 15</span>
+        <nav class="footer-main-menu">
+          <ul class="footer-menu-list">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <span class="tel">Тел. +7(495) 495-95-95</span>
+        <div class="social-btn">
+          <a class="social social-fb" href="#"><img src="" alt="Фейсбук"></a>
+          <a class="social social-inst" href="#"><img src="" alt="Инстаграм"></a>
+          <a class="social social-tw" href="#"><img src="" alt="Твиттер"></a>
+        </div>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-htmlacademy" src="img/" alt="HTMLAcademy" width="27" height="34"></a>
       </div>
-      <div class="user-menu">
-        <a class="profile" href="#">Войти</a>
-        <a class="compare" href="#">Сравнить</a>
-        <a class="basket" href="#">Корзина</a>
-      </div>
-      <span class="adress">г.Москва, ул.Строителей, 15</span>
-      <nav class="footer-main-menu">
-        <ul class="footer-menu-list">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <span class="tel">Тел. +7(495) 495-95-95</span>
-      <div class="social-btn">
-        <a class="social social-fb" href="#"><img src="" alt="Фейсбук"></a>
-        <a class="social social-inst" href="#"><img src="" alt="Инстаграм"></a>
-        <a class="social social-tw" href="#"><img src="" alt="Твиттер"></a>
-      </div>
-      <img class="logo-html" src="img/" alt="HTMLAcademy" width="27" height="34">
     </footer>
     <script src="js/script.js"></script>
   </body>
