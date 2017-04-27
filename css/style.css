@@ -1,0 +1,76 @@
+@font-face {
+  	font-family: "Open Sans";
+  	src: local("Open Sans"), 
+       	url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  	font-family: "Open Sans Light";
+  	src: local("Open Sans Light"), 
+       	url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+  	font-family: "Gilroy Light";
+  	src: local("Gilroy Light"), 
+       	url(../fonts/Gilroylight.ttf);
+}
+@font-face {
+  	font-family: "Gilroy ExtraBold";
+  	src: local("Gilroy ExtraBold"), 
+       	url(../fonts/Gilroyextrabold.ttf);
+}
+@font-face {
+  	font-family: "Gilroy ExtraBold";
+  	src: local("Gilroy ExtraBold"), 
+       	url(../fonts/Gilroyextrabold.ttf);
+}
+@font-face {
+  	font-family: "Minion Pro";
+  	src: local("Minion Pro"), 
+       	url(../fonts/MinionPro-Regular.otf);
+}
+
+body{
+  background-color: #ffffff;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  letter-spacing: 0.15px;
+}
+.center-box {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+a {
+  text-decoration: none;
+}
+.title {
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.47px;
+}
+.btn {
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+/*Header*/
+
+.logo {
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+}
+
