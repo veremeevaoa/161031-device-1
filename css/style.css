@@ -1,32 +1,45 @@
 @font-face {
   	font-family: "Open Sans";
   	src: local("Open Sans"), 
+        url(../fonts/opensans.woff2);
+        url(../fonts/opensans.woff);
        	url(../fonts/OpenSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
   	font-family: "Open Sans Light";
   	src: local("Open Sans Light"), 
+        url(../fonts/opensanslight.woff2);
+        url(../fonts/opensanslight.woff);
        	url(../fonts/OpenSans-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
   	font-family: "Gilroy Light";
   	src: local("Gilroy Light"), 
+        url(../fonts/gilroylight.woff2);
+        url(../fonts/gilroylight.woff);
        	url(../fonts/Gilroylight.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
   	font-family: "Gilroy ExtraBold";
   	src: local("Gilroy ExtraBold"), 
+        url(../fonts/gilroyextrabold.woff2);
+        url(../fonts/gilroyextrabold.woff);
        	url(../fonts/Gilroyextrabold.ttf);
-}
-@font-face {
-  	font-family: "Gilroy ExtraBold";
-  	src: local("Gilroy ExtraBold"), 
-       	url(../fonts/Gilroyextrabold.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
   	font-family: "Minion Pro";
   	src: local("Minion Pro"), 
        	url(../fonts/MinionPro-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
@@ -41,8 +54,44 @@ body{
 .center-box {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 1px 1px;
+  background-color: aliceblue;
 }
+.margin-box{
+  width: 1160px;
+  margin: 0 20px;
+  background-color: #ccc;
+}
+.block-row {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+/*  font-size: 0;*/
+}
+.block-row .col {
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: top;
+  background-color: #eee;
+}
+.col-2 {
+  width: 156px;
+}
+.col-3 {
+  width: 256px;
+}
+.col-4 {
+  width: 352px;
+}
+.col-6 {
+  width: 556px;
+}
+/*
+.col-12 {
+  width: 1160px;
+}
+*/
 a {
   text-decoration: none;
 }
@@ -63,8 +112,6 @@ a {
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
-/*Header*/
-
 .logo {
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 48px;
@@ -72,5 +119,54 @@ a {
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
+}
+/*Header*/
+
+
+/*Footer*/
+footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+
+/*Catalog*/
+
+
+.catalog-main h1.title--catalog {
+  display: block;
+  margin: 40px 80px;
+  background-color: #eee;
+}
+
+/*Каталог - Хлебные крошки*/
+.breadcrumbs {
+  margin: 40px 80px;
+  list-style: none;
+  padding: 0;
+  padding-top: 1px;
+}
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: top;
+}
+.breadcrumbs a {
+  margin-right: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 300;
+  color: rgba(0,0,0,0.3);
+/*
+  white-space: pre-wrap;
+  word-spacing: -0.3px;
+*/
+}
+.flex-container {
+  display: flex;
+}
+.block-row--catalog {
+  width: 71%;
+  padding-left: 54px;
 }
 
