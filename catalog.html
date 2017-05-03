@@ -63,88 +63,111 @@
           <li><span>Моноподы для селфи</span></li>
         </ul>
       </div>
-        <div class="flex-container">
-          <aside class="filter">
-            <div class="filter-title">
-              <h3 class="filter-title-item">Фильтр:</h3>
-            </div>
-            <form class="filter-form" action="http://example.ru/" method="get">
-              <div class="filter-price">
-                <p class="fieldset-title">Стоимость</p>
-                <div class="range-controls">
-                  <div class="scale"><div class="bar"></div></div>
-                  <div class="toggle min-toggle"></div>
-                  <div class="toggle max-toggle"></div>
-                </div>
+      <div class="flex-container">
+        <aside class="filter">
+          <div class="filter-title">
+            <h3 class="filter-title-item">Фильтр:</h3>
+          </div>
+          <form class="filter-form" action="http://example.ru/" method="get">
+            <div class="filter-price">
+              <p class="fieldset-title">Стоимость</p>
+              <div class="range-controls">
+                <div class="scale"><div class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
               </div>
-              <fieldset class="filter-colors">
-                <label class="fieldset-title">Цвет</label>
-                <input type="checkbox" id="color-1" name="black" checked>
-                <label class="checkbox" for="color-1"> Черный</label>
-                <input type="checkbox" id="color-2" name="white">
-                <label class="checkbox" for="color-2"> Белый</label>
-                <input type="checkbox" id="color-3" name="blue" checked>
-                <label class="checkbox" for="color-3"> Синий</label>
-                <input type="checkbox" id="color-4" name="red" checked>
-                <label class="checkbox" for="color-4"> Красный</label>
-                <input type="checkbox" id="color-5"name="pink">
-                <label class="checkbox" for="color-5"> Розовый</label>
-              </fieldset>
-              <fieldset class="filter-bluetooth">
-                <label class="fieldset-title">Bluetooth</label>
-                <input type="radio" id="rad-1" name="blu" value="yes" checked>
-                <label class="radio" for="rad-1"> Есть</label>
-                <input type="radio"  id="rad-2" name="blu" value="no">
-                <label class="radio" for="rad-2"> Нет</label>
-              </fieldset>
-              <button class="btn" type="submit">Показать</button>
-            </form>
-          </aside>
-          <section class="catalog-list block-row block-row--catalog">
-            <div class="sort">
-              <h3 class="sort-title">Сортировка:</h3>
-              <ul class="sort-list">
-                <li class="sort-list-item"><a>По цене</a></li>
-                <li class="sort-list-item"><a>По типу</a></li>
-                <li class="sort-list-item"><a>По популярности</a></li>
-                <li class="sort-list-item"><a>По возрастанию</a></li>
-                <li class="sort-list-item"><a>По убыванию</a></li>
-              </ul>
+              <div class="price-controls">
+                от <input class="min-price" type="text" value="0">
+                до <input class="max-price" type="text" value="5000">
             </div>
-            <article class="catalog-card col col-4">
-            <img src="img/catalog-item1.jpg" alt="Карточка каталога" width="360" height="380" class="card-photo">
-              <a href="#" class="card-title">Любительская селфи-палка</a>
-              <p class="card-price">500 р.</p>
-            </article>
-            <article class="catalog-card  col col-4">
-              <img src="img/catalog-item2.jpg" alt="Карточка каталога" width="360" height="380" class="card-photo">
-              <a href="#" class="card-title">Профессиональная селфи-палка</a> 
-              <p class="card-price">1500 руб.</p>
-            </article>
-            <article class="catalog-card col col-4">
-              <img src="img/catalog-item3.jpg" alt="Карточка каталога" width="360" height="380" class="card-photo">
-              <a href="#" class="card-title">Непотопляемая селфи-палка</a>
-              <p class="card-price">2500 руб.</p>
-            </article>
-            <article class="catalog-card col col-4">
-              <img src="img/catalog-item4.jpg" alt="Карточка каталога" width="360" height="380" class="card-photo">
-              <a href="#" class="card-title">Селфи-палка Следуй aа мной</a>
-              <p class="card-price">4900 руб.</p>
-            </article>
-             <ul class="page-number">
-              <li><a href="#">Назад</a></li>
-              <li class="number-list">
-                <ul>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                </ul>
-               </li>
-              <li><a href="#">Вперед</a></li>
+            </div>
+            <fieldset class="filter-colors">
+              <label class="fieldset-title">Цвет</label>
+              <input type="checkbox" id="color-1" name="black" checked>
+              <label class="checkbox" for="color-1"> Черный</label>
+              <input type="checkbox" id="color-2" name="white">
+              <label class="checkbox" for="color-2"> Белый</label>
+              <input type="checkbox" id="color-3" name="blue" checked>
+              <label class="checkbox" for="color-3"> Синий</label>
+              <input type="checkbox" id="color-4" name="red" checked>
+              <label class="checkbox" for="color-4"> Красный</label>
+              <input type="checkbox" id="color-5"name="pink">
+              <label class="checkbox" for="color-5"> Розовый</label>
+            </fieldset>
+            <fieldset class="filter-bluetooth">
+              <label class="fieldset-title">Bluetooth</label>
+              <input type="radio" id="rad-1" name="blu" value="yes" checked>
+              <label class="radio" for="rad-1"> Есть</label>
+              <input type="radio"  id="rad-2" name="blu" value="no">
+              <label class="radio" for="rad-2"> Нет</label>
+            </fieldset>
+            <button class="btn btn--form" type="submit">Показать</button>
+          </form>
+        </aside>
+        <section class="catalog-list block-row block-row--catalog">
+          <div class="sort">
+            <h3 class="sort-title">Сортировка:</h3>
+            <ul class="sort-list">
+              <li class="sort-list-item sort-list-item1 active"><a href="#">По цене</a></li>
+              <li class="sort-list-item sort-list-item2"><a href="#">По типу</a></li>
+              <li class="sort-list-item sort-list-item3"><a href="#">По популярности</a></li>
+              <li class="sort-list-item sort-up-arrow"><a href="#">По возрастанию</a></li>
+              <li class="sort-list-item sort-down-arrow active"><a href="#">По убыванию</a></li>
             </ul>
-          </section>
-        </div>
-
+          </div>
+          <article class="catalog-card col col-4">
+            <div class="new">New</div>
+            <img src="img/catalog-item1.jpg" alt="Карточка каталога" width="360" height="380" class="card-photo">
+            <a href="#" class="card-title">Любительская селфи-палка</a>
+            <p class="card-price">500 р.</p>
+            <div class="mask">
+              <a class="btn basket-btn" href="#">В корзину</a>
+              <a class="compare" href="#">Добавить к сравнению</a>
+            </div>
+          </article>
+          <article class="catalog-card  col col-4">
+            <div class="new">New</div>
+            <img src="img/catalog-item2.jpg" alt="Карточка каталога" width="360" height="380" class="card-photo">
+            <a href="#" class="card-title">Профессиональная селфи-палка</a> 
+            <p class="card-price">1500 руб.</p>
+            <div class="mask">
+              <a class="btn basket-btn" href="#">В корзину</a>
+              <a class="compare" href="#">Добавить к сравнению</a>
+            </div>
+          </article>
+          <article class="catalog-card col col-4">
+            <div class="new">New</div>
+            <img src="img/catalog-item3.jpg" alt="Карточка каталога" width="360" height="380" class="card-photo">
+            <a href="#" class="card-title">Непотопляемая селфи-палка</a>
+            <p class="card-price">2500 руб.</p>
+            <div class="mask">
+              <a class="btn basket-btn" href="#">В корзину</a>
+              <a class="compare" href="#">Добавить к сравнению</a>
+            </div>
+          </article>
+          <article class="catalog-card col col-4 new-active">
+            <div class="new">New</div>
+            <img src="img/catalog-item4.jpg" alt="Карточка каталога" width="360" height="380" class="card-photo">
+            <a href="#" class="card-title">Селфи-палка &laquo;Следуй за мной&raquo;</a>
+            <p class="card-price">4900 руб.</p>
+            <div class="mask">
+              <a class="btn basket-btn" href="#">В корзину</a>
+              <a class="compare" href="#" href="#">Добавить к сравнению</a>
+            </div>
+          </article>
+          <ul class="page-number">
+            <li><a href="#">Назад</a></li>
+            <li class="number-list">
+              <ul>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Вперед</a></li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="center-box center-box--footer">

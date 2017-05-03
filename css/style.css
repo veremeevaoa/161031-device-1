@@ -68,26 +68,26 @@ body{
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: beige;
-/*  font-size: 0;*/
+/*  background-color: beige;*/
+  font-size: 0;
 }
 .block-row .col {
   display: inline-block;
   margin: 0 20px;
   vertical-align: top;
-  background-color: #eee;
+/*  background-color: #eee;*/
 }
 .col-2 {
-  width: 156px;
+  width: 159px;
 }
 .col-3 {
-  width: 256px;
+  width: 259px;
 }
 .col-4 {
-  width: 352px;
+  width: 359px;
 }
 .col-6 {
-  width: 556px;
+  width: 559px;
 }
 ul {
   list-style: none;
@@ -104,6 +104,10 @@ a {
   letter-spacing: 0.47px;
 }
 .btn {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  padding: 10px 20px;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -111,6 +115,29 @@ a {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn::before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 16px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  content: "";
+  background-color: #f0c52e;
+}
+.btn:hover {
+  background-color: #f0c52e;
+}
+.btn:active {
+  background-color: #f0c52e;
+  color: rgba(0,0,0, 0.3); 
 }
 .logo {
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -394,6 +421,135 @@ header .margin-box {
 }
 /*Main*/
 
+
+/*Таб-меню*/
+
+.tab-item:active {
+  opacity: 0.3;
+}
+.tab-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240,197,46, 0.5);
+  font-size: 0;
+}
+.tab-icon:hover {
+  background-color: rgba(240,197,46, 1);
+}
+.tab-icon:active {
+  background-color: rgba(240,197,46, 1);
+}
+.tab-title {
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.18px;
+}
+
+/*Партнеры*/
+
+.partners {
+  margin-top: 94px;
+  margin-bottom: 93px;
+}
+.partners-logo img {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.partners-logo img:last-child {
+  display: none;
+}
+.partners-logo:hover img:first-child {
+  display: none;
+}
+.partners-logo:hover img:last-child {
+  display: inline-block;
+}
+
+/*Доставка-контакты*/
+
+.about,
+.contacts {
+  position: relative;
+  padding-top: 45px;
+}
+.about::before,
+.contacts::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 80px;
+  height: 7px;
+  content: "";
+  background-color: #000000;
+}
+.about .title,
+.contacts .title {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  line-height: 48px;
+}
+.about .wrapper,
+.contacts .wrapper {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
+}
+.about p,
+.contacts p {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+.transcompany {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+}
+.transcompany li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 36px;
+}
+.transcompany li:before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  display: block;
+  width: 5px;
+  height: 5px;
+  content: "";
+  border: 3px solid rgba(0,0,0, 0.3);
+  border-radius: 50%;
+}
+.transcompany a {
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0px;
+}
+.map {
+  line-height: 0;
+}
+.about-contacts{
+  margin-bottom: 85px;
+}
+
 /*Footer*/
 footer {
   background-color: #464646;
@@ -458,7 +614,6 @@ footer {
   margin-top: 45px;
   margin-bottom: 65px;
 }
-
 footer ul {
   margin: 0;
   padding: 0;
@@ -487,7 +642,6 @@ footer li {
 .footer-main-menu a:active {
   opacity: 0.3;
 }
-
 .social-btn {
   position: relative;
   padding-left: 500px;
@@ -574,10 +728,6 @@ footer a.social-fb:active {
   line-height: 36px;
   font-weight: 300;
   color: rgba(0,0,0,0.3);
-/*
-  white-space: pre-wrap;
-  word-spacing: -0.3px;
-*/
 }
 .breadcrumbs a::after {
   position: absolute;
@@ -622,16 +772,243 @@ footer a.social-fb:active {
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 72px;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.2px;
   vertical-align: top;
 /*  background-color: #fff;*/
 }
 .filter-form {
   width: 200px;
+  margin-top: 70px;
   margin-right: 70px;
 }
+.filter-form .filter-price,
+.filter-form fieldset {
+  margin-bottom: 40px;
+  border: none;
+  border-top: 2px solid #000000;
+}
+.fieldset-title {
+  display: block;
+  margin: 15px 0 22px;
+  padding: 0;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
 
-/*Карточки каталога*/
+/*Скролл-бар*/
+
+.range-controls {
+  position: relative;
+  width: 200px;
+  height: 21px;
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+  padding-bottom: 5px;
+  overflow: hidden;
+/*  background: rgba(255, 255, 255, 0.5);*/
+}
+.range-controls .scale {
+  display: inline-block;
+  vertical-align: top;
+  width: 198px;
+  height: 1px;
+  margin-top: 11px;
+  margin-left: 0px;
+  background-color: #dbdbdb;
+}
+.range-controls .bar {
+  width: 110px;
+  height: 2px;
+  margin-left: 0px;
+  background-color: #91c92f;
+}
+.range-controls .toggle {
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  background: #eeeeee;
+  cursor:pointer;
+  border-radius:50%;
+  border: 2px solid #000000;
+}
+.range-controls .max-toggle {
+  margin-left: 110px;
+}
+.range-controls .toggle:active {
+  width: 12px;
+  height: 12px;
+  background-color: #91c92f;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.75);
+}
+.price-controls {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #000000;
+/*  background-color: aliceblue;*/
+}
+.min-price,
+.max-price {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 2px 0 0;
+  width: 50px;
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #000000;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.min-price {
+  margin-right: 17px;
+}
+
+.filter-colors,
+.filter-bluetooth {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.filter-form input[type=radio],
+.filter-form input[type=checkbox] {
+  display: none;
+}
+.filter-colors .checkbox,
+.filter-bluetooth .radio {
+  position: relative;
+  padding-left: 40px;
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14;
+  font-weight: 300;
+  cursor: pointer;
+/*  background-color: beige;*/
+}
+
+/*Выбор цвета*/
+
+.filter-colors .checkbox::before {
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: -1px;
+  width: 23px;
+  height: 23px;
+  content: "";
+  background: #dbdbdb;
+}
+.filter-colors .checkbox::after {
+  display: none;
+  position: absolute;
+  top: 16px;
+  left: 5px;
+  width: 12px;
+  height: 7px;
+  content: "";
+  background-color: transparent;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -327px -5px;
+}
+.filter-colors .checkbox:hover::before {
+  background-color: #cecece;
+}
+.filter-colors .checkbox:active::before {
+  background-color: #c4c4c4;
+}
+.filter-colors .checkbox:active::after {
+  display: block;
+}
+input[type="checkbox"]:checked + label::after {
+  display: block;
+}
+input[type="checkbox"]:checked + label:hover::before {
+  background-color: #cecece;
+}
+input[type="checkbox"]:checked + label:active::after {
+  display: none;
+}
+input[type="checkbox"]:checked + label:active::before {
+  background-color: #c4c4c4;
+}
+
+/*Выбор bluetooth*/
+
+.filter-form .filter-bluetooth {
+  margin-bottom: 32px;
+}
+.filter-bluetooth .radio::before {
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: -1px;
+  width: 18px;
+  height: 18px;
+  content: "";
+  border-radius: 50%;
+  border: 2px solid #dbdbdb;
+  background-color: transparent;
+}
+.filter-bluetooth .radio::after {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 6px;
+  width: 4px;
+  height: 4px;
+  content: "";
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+.filter-bluetooth .radio:hover::before {
+  border-color: #cecece;
+}
+.filter-bluetooth .radio:active::before {
+  border-color: #c4c4c4;
+}
+.filter-bluetooth .radio:active::after {
+  display: block;
+}
+input[type="radio"]:checked + label::after {
+  display: block;
+}
+input[type="radio"]:checked + label:hover::before {
+  border-color: #cecece;
+}
+input[type="radio"]:checked + label:active::after {
+  display: none;
+}
+input[type="radio"]:checked + label:active::before {
+  border-color: #c4c4c4;
+}
+
+/*Кнопка*/
+
+.btn--form {
+  width: 200px;
+}
+
+/*Раздел каталога*/
 
 .block-row--catalog {
   width: 67%;
@@ -663,11 +1040,164 @@ footer a.social-fb:active {
   display: inline-block;
   vertical-align: top;
   padding: 27px 0;
+  opacity: 0.3;
+}
+.sort-list-item a {
+  display: block;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  color: #000000;
+}
+.sort-list-item:hover {
+  opacity: 0.6;
+}
+.sort-list-item:active {
+  opacity: 1;
+}
+.sort-list-item1 {
+  margin-right: 30px;
+}
+.sort-list-item2 {
+  margin-right: 30px;
+}
+.sort-list-item3 {
+  margin-right: 180px;
+}
+.sort-up-arrow,
+.sort-down-arrow {
+  margin: 33px 0 20px;
+  padding: 0;
+  width: 20px;
+  height: 10px;
+  margin-left: 22px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  text-indent: -9999px;
+  opacity: 0.2;
+}
+.sort-up-arrow {
+  background-position: -298px -5px;
+}
+.sort-down-arrow {
+  background-position: -271px -5px;
+}
+.sort-up-arrow:hover,
+.sort-down-arrow:hover {
+  opacity: 0.4;
+}
+.sort-up-arrow:active,
+.sort-down-arrow:active {
+  opacity: 1;
+}
+.sort-list-item.active {
+  opacity: 1;
 }
 
+/*Блок карточек*/
+
+.catalog-card {
+  position: relative;
+  z-index: 0;
+}
+.catalog-card .card-title,
+.catalog-card .card-price {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 35px 0 50px;
+}
+.catalog-card .card-title {
+  width: 260px;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.18px;
+  font-weight: 800;
+  color: #000000;
+}
+.catalog-card .card-price {
+  width: 87px; /*исправить до 100*/
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.16px;
+  font-weight: 300;
+  color: #000000;
+  text-align: right;
+}
+.new {
+  position: absolute;
+  top: 29px;
+  right: 27px;
+  display: none;
+  width: 56px;
+  height: 35px;
+  padding-top: 21px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.7px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 0.1;
+}
+.new-active > .new {
+  display: inline-block;
+}
+.mask {
+  position: absolute;
+  top:0;
+  left:0;
+  display: none;
+  z-index: 5;
+  width: 360px;
+  height: 380px;
+  background-color: rgba(238,238,238, 0.7);
+  cursor: pointer;
+}
+.mask a {
+  position: relative;
+  display: block;
+  z-index: 50;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
+.catalog-card:hover > .mask {
+  display: block;
+}
+.mask .basket-btn {
+  width: 160px;
+  margin-top: 180px;
+}
+.mask .basket-btn:hover {
+  background-color: #f0c52e;
+}
+.mask .basket-btn:active {
+  background-color: #f0c52e;
+  color: rgba(0,0,0, 0.3); 
+}
+.mask .compare {
+  margin-top: 10px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  font-weight: 300;
+  letter-spacing: 0.13px;
+  color: rgba(0,0,0, 0.5);
+}
+.mask .compare:hover {
+  color: rgba(0,0,0, 1);
+}
+.mask .compare:active {
+  color: rgba(0,0,0, 0.2);
+}
 
 /*Переключатель страниц*/
 
@@ -675,25 +1205,60 @@ footer a.social-fb:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 89.5%;
+  width: 87%;
   margin: 0;
   padding: 0;
+  margin-left: 20px;
+  margin-bottom: 75px;
+  line-height: 18px;
   background-color: rgba(0,0,0, 0.08);
 }
-.page-number a {
-  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 3.6px;
-  color: #000000;
-}
 .number-list ul,
-.number-list li,
-.number-list a {
+.number-list li {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
   padding: 0;
+}
+.page-number a {
+  display: block;
+  padding: 25px 30px;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3.2px;
+  text-align: center;
+  color: #000000;
+/*  background-color: aliceblue;*/
+}
+.page-number a:hover {
+  color: #000000;
+  background-color: rgba(0,0,0, 0.08);
+}
+.page-number a:active {
+  color: color: rgba(0,0,0, 0.3);
+  background-color: rgba(0,0,0, 0.08);
+}
+.number-list li {
+  margin-right: 10px;
+}
+.number-list li:last-child {
+  margin-right: 0;
+}
+.number-list a {
+  padding: 25px 5px;
+  color: rgba(0,0,0, 0.3);
+}
+.number-list .active {
+  color: #000000;
+}
+.number-list a:hover {
+  color: rgba(0,0,0, 0.6);
+  background-color: transparent;
+}
+.number-list a:active {
+  color: #000000;
+  background-color: transparent;
 }
 
 /*Спрайты*/
