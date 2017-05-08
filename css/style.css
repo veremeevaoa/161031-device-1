@@ -1559,6 +1559,34 @@ input[type="radio"]:checked + label:active::before {
 
 /*Модальные окна*/
 
+<!--   Анимация-->
+   
+ @-webkit-keyframes scale {
+  0%   {-webkit-transform: scale(0) translateY(-2500px);transform: scale(0) translateY(-2500px);}
+  70%  {-webkit-transform: scale(1.3) translateY(100px);transform: scale(1.3) translateY(100px);}
+  90%  {-webkit-transform: scale(0.8) translateY(0);transform: scale(0.8) translateY(0);}
+  100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+@keyframes scale {
+  0%   {-webkit-transform: scale(0) translateY(-2500px);transform: scale(0) translateY(-2500px);}
+  70%  {-webkit-transform: scale(1.3) translateY(100px);transform: scale(1.3) translateY(100px);}
+  90%  {-webkit-transform: scale(0.8) translateY(0);transform: scale(0.8) translateY(0);}
+  100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {-webkit-transform: skewX(0);transform: skewX(0);}
+  10%, 30%, 50%, 70%, 90% {-webkit-transform: skewX(-10deg);transform: skewX(-10deg);}
+  20%, 40%, 60%, 80% {-webkit-transform: skewX(10deg);transform: skewX(10deg);}
+}
+
+@keyframes shake {
+  0%, 100% {-webkit-transform: skewX(0);transform: skewX(0);}
+  10%, 30%, 50%, 70%, 90% {-webkit-transform: skewX(-10deg);transform: skewX(-10deg);}
+  20%, 40%, 60%, 80% {-webkit-transform: skewX(10deg);transform: skewX(10deg);}
+}
+
+
 .modal-content-close {
   position: absolute;
   top: 23px;
@@ -1700,6 +1728,21 @@ input[type="radio"]:checked + label:active::before {
   padding: 0;
   background: #ffffff url("../img/location-map-big.png") no-repeat center;
   box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content-show {
+  display: block;
+-webkit-animation-name: scale;
+        animation-name: scale;
+-webkit-animation-duration: 1s;
+        animation-duration: 1s;
+}
+.modal-map-show {
+  display: block;
+}
+.modal-error {
+  -webkit-animation: shake 1s;
+          animation: shake 1s;
 }
 
 /*
