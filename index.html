@@ -207,7 +207,11 @@
             <div class="wrapper">
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
               <div class="map">
-                <a href="#"><img class="map-preview" src="img/map-preview.jpg" width="560" height="222" alt="Карта"></a>
+                <a class="js-open-map" href="https://yandex.ru/maps/-/C6qSqC4o">
+                  <img class="map-preview" src="img/map-preview.jpg" width="560" height="222" alt="Карта">
+<!--                  <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6qSqC4o" width="560" height="222" frameborder="0"></iframe>-->
+<!--                  <iframe src="https://www.google.com/maps/embed/v1/place?q=ул.+Строителей,+15,+г.+Москва,+город+Москва,+Россия&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU" width="560" height="222" style="border:0" allowfullscreen></iframe>-->
+                </a>
               </div>
             </div>
             <a href="#" class="btn mail-us">Напишите нам</a>
@@ -244,7 +248,7 @@
     </footer>
     
 <!--    Модальные окна-->
-    
+   
     <div class="modal-content modal-link">
       <button class="modal-content-close modal-link-close" type="button" title="Закрыть">Закрыть</button>
       <form class="link" action="http://example.ru/" method="post">
@@ -262,9 +266,10 @@
     </div>
     <div class="modal-content-map">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-<!--      <div class="yandex-map"></div>-->
-      <iframe src="https://www.google.com/maps/embed/v1/place?q=ул.+Строителей,+15,+г.+Москва,+город+Москва,+Россия&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU" width="960" height="555" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6qSqC4o" width="960" height="555" frameborder="0"></iframe>
+<!--      <iframe src="https://www.google.com/maps/embed/v1/place?q=ул.+Строителей,+15,+г.+Москва,+город+Москва,+Россия&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU" width="960" height="555" style="border:0" allowfullscreen></iframe>-->
     </div>
+ 
     <script src="js/script.js"></script>
   </body>
 </html>
