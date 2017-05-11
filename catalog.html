@@ -6,7 +6,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header page-header">
@@ -66,7 +66,7 @@
       <div class="flex-container">
         <aside class="filter">
           <div class="filter-title">
-            <h3 class="filter-title-item">Фильтр:</h3>
+            <h2 class="filter-title-item">Фильтр:</h2>
           </div>
           <form class="filter-form" action="http://example.ru/" method="get">
             <div class="filter-price">
@@ -79,10 +79,10 @@
               <div class="price-controls">
                 от <input class="min-price" type="text" value="0">
                 до <input class="max-price" type="text" value="5000">
-            </div>
+              </div>
             </div>
             <fieldset class="filter-colors">
-              <label class="fieldset-title">Цвет</label>
+              <p class="fieldset-title">Цвет</p>
               <input type="checkbox" id="color-1" name="black" checked>
               <label class="checkbox" for="color-1"> Черный</label>
               <input type="checkbox" id="color-2" name="white">
@@ -95,7 +95,7 @@
               <label class="checkbox" for="color-5"> Розовый</label>
             </fieldset>
             <fieldset class="filter-bluetooth">
-              <label class="fieldset-title">Bluetooth</label>
+              <p class="fieldset-title">Bluetooth</p>
               <input type="radio" id="rad-1" name="blu" value="yes" checked>
               <label class="radio" for="rad-1"> Есть</label>
               <input type="radio"  id="rad-2" name="blu" value="no">
@@ -106,7 +106,7 @@
         </aside>
         <section class="catalog-list block-row block-row--catalog">
           <div class="sort">
-            <h3 class="sort-title">Сортировка:</h3>
+            <h2 class="sort-title">Сортировка:</h2>
             <ul class="sort-list">
               <li class="sort-list-item sort-list-item1 active"><a href="#">По цене</a></li>
               <li class="sort-list-item sort-list-item2"><a href="#">По типу</a></li>
