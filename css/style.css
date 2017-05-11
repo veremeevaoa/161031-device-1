@@ -1677,7 +1677,7 @@ input[type="radio"]:checked + label:active::before {
 
 /*Модальные окна*/
 
-<!--   Анимация-->
+/*Анимация*/
    
 @-webkit-keyframes scale {
   0%   {-webkit-transform: scale(0) translateY(-2500px);transform: scale(0) translateY(-2500px);}
@@ -1712,9 +1712,9 @@ input[type="radio"]:checked + label:active::before {
   width: 55px;
   height: 55px;
   font-size: 0;
-  border: 0;
+  border: none;
   border-radius: 50%;
-  outline: 0;
+  outline: none;
   cursor: pointer;
   background-color: rgba(240,197,46, 0.5);
 }
@@ -1846,6 +1846,9 @@ input[type="radio"]:checked + label:active::before {
   padding: 0;
   background: #ffffff url("../img/location-map-big.png") no-repeat center;
   box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+iframe {
+  border: none;
 }
 
 .modal-content-show {
