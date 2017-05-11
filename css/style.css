@@ -1,8 +1,8 @@
 @font-face {
   	font-family: "Open Sans";
   	src: local("Open Sans"), 
-        url(../fonts/opensans.woff2);
-        url(../fonts/opensans.woff);
+        url(../fonts/opensans.woff2),
+        url(../fonts/opensans.woff),
        	url(../fonts/OpenSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
@@ -10,8 +10,8 @@
 @font-face {
   	font-family: "Open Sans Light";
   	src: local("Open Sans Light"), 
-        url(../fonts/opensanslight.woff2);
-        url(../fonts/opensanslight.woff);
+        url(../fonts/opensanslight.woff2),
+        url(../fonts/opensanslight.woff),
        	url(../fonts/OpenSans-Light.ttf);
     font-weight: normal;
     font-style: normal;
@@ -19,8 +19,8 @@
 @font-face {
   	font-family: "Gilroy Light";
   	src: local("Gilroy Light"), 
-        url(../fonts/gilroylight.woff2);
-        url(../fonts/gilroylight.woff);
+        url(../fonts/gilroylight.woff2),
+        url(../fonts/gilroylight.woff),
        	url(../fonts/Gilroylight.ttf);
     font-weight: normal;
     font-style: normal;
@@ -28,8 +28,8 @@
 @font-face {
   	font-family: "Gilroy ExtraBold";
   	src: local("Gilroy ExtraBold"), 
-        url(../fonts/gilroyextrabold.woff2);
-        url(../fonts/gilroyextrabold.woff);
+        url(../fonts/gilroyextrabold.woff2),
+        url(../fonts/gilroyextrabold.woff),
        	url(../fonts/Gilroyextrabold.ttf);
     font-weight: normal;
     font-style: normal;
@@ -1649,7 +1649,7 @@ input[type="radio"]:checked + label:active::before {
   background-color: rgba(0,0,0, 0.08);
 }
 .page-number a:active {
-  color: color: rgba(0,0,0, 0.3);
+  color: rgba(0,0,0, 0.3);
   background-color: rgba(0,0,0, 0.08);
 }
 .number-list li {
@@ -1679,12 +1679,13 @@ input[type="radio"]:checked + label:active::before {
 
 <!--   Анимация-->
    
- @-webkit-keyframes scale {
+@-webkit-keyframes scale {
   0%   {-webkit-transform: scale(0) translateY(-2500px);transform: scale(0) translateY(-2500px);}
   70%  {-webkit-transform: scale(1.3) translateY(100px);transform: scale(1.3) translateY(100px);}
   90%  {-webkit-transform: scale(0.8) translateY(0);transform: scale(0.8) translateY(0);}
   100% {-webkit-transform: scale(1);transform: scale(1);}
 }
+
 @keyframes scale {
   0%   {-webkit-transform: scale(0) translateY(-2500px);transform: scale(0) translateY(-2500px);}
   70%  {-webkit-transform: scale(1.3) translateY(100px);transform: scale(1.3) translateY(100px);}
@@ -1703,7 +1704,6 @@ input[type="radio"]:checked + label:active::before {
   10%, 30%, 50%, 70%, 90% {-webkit-transform: skewX(-10deg);transform: skewX(-10deg);}
   20%, 40%, 60%, 80% {-webkit-transform: skewX(10deg);transform: skewX(10deg);}
 }
-
 
 .modal-content-close {
   position: absolute;
@@ -1952,5 +1952,3 @@ input[type="radio"]:checked + label:active::before {
     background-position: -420px -5px;
 }
 */
-
-
