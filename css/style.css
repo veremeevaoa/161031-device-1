@@ -226,7 +226,7 @@ header .margin-box {
   border: none;
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 15px;
-  line-height: 36px;
+  line-height: 22px;
 /*  font-weight: 300;*/
   color: rgba(0,0,0, 0.3);
   background-color: transparent;
@@ -251,11 +251,12 @@ header .margin-box {
   display: inline-block;
   vertical-align: bottom;
   margin-right: -4px;
+  padding-bottom: 4px;
   border: none;
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  line-height: 34px;
+  line-height: 24px;
   border-bottom: 2px solid #000000;
   color: #000000;
 }
@@ -294,7 +295,7 @@ header .margin-box {
   top: 10px;
   left: 3px;
   width: 16px;
-  height: 16px;
+  height: 20px;
   background-position: -247px -4px;
 }
 .user-menu .profile::before {
@@ -1512,13 +1513,13 @@ input[type="radio"]:checked + label:active::before {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
-.sort-list {
-  margin: 0;
-  padding: 0;
-  padding-left: 50px;
-/*  width: 66%;*/
+.sort .sort-list {
   display: inline-block;
   vertical-align: top;
+  margin: 0;
+  padding: 0;
+  padding-left: 49px;
+/*  width: 66%;*/
   list-style: none;
 /*  background-color: aliceblue;*/
 }
@@ -1545,19 +1546,19 @@ input[type="radio"]:checked + label:active::before {
   opacity: 1;
 }
 .sort-list-item1 {
-  margin-right: 25px;
+  margin-right: 26px;
 }
 .sort-list-item2 {
   margin-right: 30px;
 }
 .sort-list-item3 {
-  margin-right: 210px;
+  margin-right: 207px;
 }
 .sort-up-arrow,
 .sort-down-arrow {
   margin: 28px 0 20px;
   padding: 0;
-  width: 20px;
+  width: 18px;
   height: 10px;
   background: transparent url("../img/sprite.png") no-repeat;
   text-indent: -9999px;
@@ -1584,12 +1585,14 @@ input[type="radio"]:checked + label:active::before {
 
 /*Блок карточек товара*/
 
-.catalog-card {
+.catalog-list .catalog-card {
   position: relative;
   z-index: 0;
+/*  background-color: aquamarine;*/
 }
-.catalog-card:nth-of-type(2n) {
+.catalog-list .catalog-card:nth-of-type(2n) {
   margin-right: 0;
+  margin-left: 15px;
 }
 .card-photo {
   display: block;
