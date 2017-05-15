@@ -146,17 +146,21 @@ a {
   font-size: 15px;
   line-height: 36px;
 /*  font-weight: 300;*/
+/*  background-color: aliceblue;*/
 }
 .user-menu a {
   position: relative;
   margin: 0;
   margin-left: 40px;
   padding-left: 22px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 15px;
-  line-height: 36px;
+  line-height: 22px;
 /*  font-weight: 300;*/
   color: #000000;
+/*  background-color: beige;*/
 }
 .user-menu .search::before,
 .user-menu .profile::before,
@@ -212,6 +216,8 @@ header .margin-box {
   margin-right: 0;
 }
 .user-menu .search {
+  display: inline-block;
+  vertical-align: top; 
   position: relative;
   margin: 0;
   margin-right: auto;
@@ -219,6 +225,8 @@ header .margin-box {
   background-color: transparent;
 }
 .user-menu--header .search-field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   padding-left: 40px;
@@ -282,7 +290,7 @@ header .margin-box {
 .user-menu .exit {
   margin: 0;
   margin-right: 23px;
-  padding: 0;
+  padding: 7px 0;
   opacity: 0.3;
 }
 .main-header .exit {
@@ -307,7 +315,7 @@ header .margin-box {
 .user-menu .compare::before {
   width: 12px;
   height: 12px;
-  background-position: -69px -4px;
+  background-position: -68px -4px;
 }
 .user-menu .basket::before {
   width: 12px;
@@ -343,6 +351,8 @@ header .margin-box {
   list-style: none;
 }
 .menu-list li {
+  display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
 /*  background-color: azure;*/
@@ -518,6 +528,8 @@ header .margin-box {
 /*  background-color: azure;*/
 }
 .slider-photo {
+  display: inline-block;
+  vertical-align: top;
   width: 530px;
   margin-right: 20px;
   text-align: center;
@@ -527,6 +539,8 @@ header .margin-box {
   padding-right: 25px;
 }
 .promo-slider-wrapper {
+  display: inline-block;
+  vertical-align: top;
   position: relative;
   z-index: 20;
   width: 505px;
@@ -587,6 +601,8 @@ header .margin-box {
   display: flex;
 }
 .parameters {
+  display: inline-block;
+  vertical-align: top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +618,9 @@ header .margin-box {
   letter-spacing: 0.13px;
 }
 .parameters span {
+  display: block;
   margin-bottom: 10px;
+  padding: 0;
   font-family: "Gilroy Light", "Arial", sans-serif;
   font-size: 36px;
   line-height: 38px;
@@ -658,6 +676,7 @@ header .margin-box {
   opacity: 0.3;
 }
 .tab-icon {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,11 +689,17 @@ header .margin-box {
   margin-bottom: 37px;
   width: 160px;
   height: 160px;
-  background-color: rgba(240,197,46, 0.5);
   font-size: 0;
+  text-align: center;
+  background-color: #f7e296;
+  background-color: rgba(240,197,46, 0.5);
 }
 .tab-item:nth-of-type(2) img {
   margin-top: 42px;
+/*  background-color: aliceblue;*/
+}
+.tab-item:nth-of-type(3) img {
+  margin-left: 12px;
 /*  background-color: aliceblue;*/
 }
 .tab-icon:hover {
@@ -734,6 +759,8 @@ header .margin-box {
   display: none;
 }
 .services-menu {
+  display: inline-block;
+  vertical-align: top;
   position: relative;
   margin: 0;
   margin-top: 80px;
@@ -768,6 +795,8 @@ header .margin-box {
 /*  background-color: beige;*/
 }
 .sliders-wrapper {
+  display: inline-block;
+  vertical-align: top;
   margin-top: 53px;
   margin-bottom: auto;
   padding: 0;
@@ -987,7 +1016,13 @@ footer {
 .center-box--footer a {
   color: #ffffff;
 }
+.footer-logo {
+  display: inline-block;
+  vertical-align: top;
+}
 .footer-logo .logo--footer {
+  display: inline-block;
+  vertical-align: top;
   margin-left: -2px;
   width: 164px;
   color: #ffc600;
@@ -1010,7 +1045,10 @@ footer {
   color: rgba(255,198,0, 0.3);
 }
 .user-menu--footer {
+  display: inline-block;
+  vertical-align: top;
   margin-left: 550px;
+/*  background-color: aliceblue;*/
 }
 .user-menu--footer a {
   margin-left: 36px;
@@ -1032,16 +1070,19 @@ footer {
   opacity: 0.3;
 }
 .user-menu--footer .profile::before {
-  top: 5px;
-  background-position: -420px -5px;
+  top: 11px;
+  width: 20px;
+  background-position: -418px -4px;
 }
 .user-menu--footer .compare::before {
-  top: 5px;
-  background-position: -87px -4px;
+  top: 11px;
+  width: 19px;
+  background-position: -86px -4px;
 }
 .user-menu--footer .basket::before {
-  top: 5px;
-  background-position: -47px -5px;
+  top: 11px;
+  width: 20px;
+  background-position: -46px -4px;
 }
 .adress,
 .tel {
@@ -1064,6 +1105,10 @@ footer li {
   vertical-align: top;
   margin-right: -3px;
 /*  background-color: aliceblue;*/
+}
+.footer-main-menu {
+  display: inline-block;
+  vertical-align: top;
 }
 .footer-main-menu a {
   display: inline-block;
@@ -1089,6 +1134,8 @@ footer li {
   opacity: 0.3;
 }
 .social-btn {
+  display: inline-block;
+  vertical-align: top;
   position: relative;
   padding-left: 510px;
 /*  background-color: beige;*/
@@ -1135,6 +1182,8 @@ footer a.social-fb:active {
   opacity: 0.1;
 }
 .logo-htmlacademy {
+  display: inline-block;
+  vertical-align: top;
   padding-top: 3px;
 }
  .logo-htmlacademy:hover {
@@ -1247,6 +1296,7 @@ footer a.social-fb:active {
   width: 205px;
   margin-top: 69px;
   margin-right: 65px;
+/*  background-color: beige;*/
 }
 .filter-form .filter-price,
 .filter-form fieldset {
@@ -1374,6 +1424,7 @@ footer a.social-fb:active {
 }
 .filter-colors .checkbox,
 .filter-bluetooth .radio {
+  display:   block;
   position: relative;
   padding-left: 40px;
   font-family: "Gilroy Light", "Arial", sans-serif;
@@ -1406,7 +1457,7 @@ footer a.social-fb:active {
   height: 7px;
   content: "";
   background-color: transparent;
-  background: url(../img/sprite.png) no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   background-position: -327px -5px;
 }
 .filter-colors .checkbox:hover::before {
@@ -1730,6 +1781,10 @@ input[type="radio"]:checked + label:active::before {
 }
 .number-list ul {
   margin-left: 10px;
+}
+.page-number > li {
+  display: inline-block;
+  vertical-align: top;
 }
 .page-number a {
   display: block;
